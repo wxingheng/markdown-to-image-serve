@@ -4,10 +4,9 @@ services:
   app:
     build:
       context: .
-    # 指定平台 amd64 架构 （Mac Apple Silicon 平台）
-    platform: linux/amd64
-    # 指定平台 x86 架构 （Linux 平台, Windows 平台, Mac Intel 平台）
-    # platform: linux/x86
+    platform: linux/amd64 # 适用于 Intel 或 AMD 处理器的64位 Linux/Mac 系统
+    # platform: linux/arm64 # 适用于 ARM64 架构，如 Apple M1/M2、Raspberry Pi 4 等
+    # platform: windows/amd64 # 适用于 Windows
     ports:
       - "3000:3000"
     environment:

@@ -1,12 +1,12 @@
 # *.mdx
 # *.mdx.js
 # *.md.js
-node_modules
-.next
-.env
-.env.development.local
-.env.test.local
-.env.production.local
+.*
+!.gitignore
+!.dockerignore
+!.env.production
+!.env.shadow
+!.eslintrc.json
+.npmrc
+node_modules/
 public/uploads/posters/*
-.env.local
-.vercel
